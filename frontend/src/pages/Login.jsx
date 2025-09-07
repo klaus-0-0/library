@@ -50,25 +50,27 @@ const Login = () => {
         className="absolute w-full h-full object-cover opacity-100"
       />
 
+            {/* {navbar} */}
       <nav className="w-full bg-white p-4 flex justify-end relative z-10">
-        <div className="flex space-x-6">
-          <button className="text-black font-bold mt-4" onClick={() => navigate("")}>
+        <div className="flex flex-wrap items-center justify-end gap-2 md:gap-6">
+          <button
+            className="text-black font-bold text-sm md:text-base"
+            onClick={() => navigate("")}
+          >
             About
           </button>
-          <div className="flex justify-center pt-4 gap-4">
-            <button
-              className="w-50 bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded font-medium transition cursor-pointer"
-              onClick={() => navigate("/signup")}
-            >
-              Sign up
-            </button>
-            <button
-              className="w-50 bg-white hover:bg-gray-500 text-pink-500 border border-black py-2 px-4 rounded font-medium transition cursor-pointer"
-              onClick={() => navigate("/login")}
-            >
-              Log in
-            </button>
-          </div>
+          <button
+            className="bg-pink-500 hover:bg-pink-600 text-white py-1 px-2 md:py-2 md:px-4 rounded font-medium text-sm md:text-base transition cursor-pointer"
+            onClick={() => navigate("/signup")}
+          >
+            Sign up
+          </button>
+          <button
+            className="bg-white hover:bg-gray-500 text-pink-500 border border-black py-1 px-2 md:py-2 md:px-4 rounded font-medium text-sm md:text-base transition cursor-pointer"
+            onClick={() => navigate("/login")}
+          >
+            Log in
+          </button>
         </div>
       </nav>
 
