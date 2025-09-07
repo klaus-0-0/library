@@ -58,18 +58,19 @@ const Dashboard = () => {
         alt="Chat background"
       />
       {/* Navbar */}
-      <nav className="relative flex justify-between items-center bg-white shadow px-6 py-4">
-        <h1 className="relative text-xl font-bold text-gray-800">📝 Books</h1>
-        <div className="space-x-4 relative">
+      <nav className="relative flex flex-wrap md:flex-nowrap justify-between items-center bg-white shadow px-4 py-3">
+        <h1 className="text-xl font-bold text-gray-800">📝 Books</h1>
+
+        <div className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 mt-2 md:mt-0 self-end">
           <button
-            onClick={()=>navigate("/MyBooks")}
-            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 cursor-pointer"
+            onClick={() => navigate("/MyBooks")}
+            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 text-sm md:text-base"
           >
             My books
           </button>
           <button
             onClick={handleLogout}
-            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 cursor-pointer"
+            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 text-sm md:text-base"
           >
             Logout
           </button>
