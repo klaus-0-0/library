@@ -1,5 +1,5 @@
 const config = {
-    apiUrl: "http://localhost:3000/api"
+    apiUrl: "srv-d2udft3uibrs73fj00bg/api"
     // apiUrl: "https://notes-1v6a.onrender.com/api"
 
 }
