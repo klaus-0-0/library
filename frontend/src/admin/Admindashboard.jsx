@@ -45,18 +45,19 @@ const Dashboard = () => {
         alt="Chat background"
       />
       {/* Navbar */}
-      <nav className="relative flex justify-between items-center bg-white shadow px-6 py-4">
-        <h1 className="relative text-xl font-bold text-gray-800">📝 Your Notes</h1>
-        <div className="space-x-4 relative">
+      <nav className="relative flex flex-wrap md:flex-nowrap justify-between items-center bg-white shadow px-4 py-3">
+        <h1 className="text-xl font-bold text-gray-800">📝 Your Notes</h1>
+
+        <div className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 mt-2 md:mt-0 self-end">
           <button
             onClick={handleCreateNote}
-            className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-900 transition cursor-pointer"
+            className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-900 transition cursor-pointer text-sm md:text-base"
           >
-            upload book
+            Upload Book
           </button>
           <button
             onClick={handleLogout}
-            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition cursor-pointer"
+            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition cursor-pointer text-sm md:text-base"
           >
             Logout
           </button>
