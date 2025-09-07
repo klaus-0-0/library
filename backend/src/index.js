@@ -7,7 +7,7 @@ const auth = require("./auth")
 const admindata = require("./admin/AdminData")
 
 app.use(cors({ 
-    origin: "http://localhost:5173",  
+    origin: "https://library-1-xcts.onrender.com",  
     credentials: true 
 }));
 // app.use(cookieParser());
