@@ -7,6 +7,6 @@ export default defineConfig({
   server: {
     port: 5173,
     host: true,
-    allowedHosts: ['https://library-1-xcts.onrender.com'], 
+    allowedHosts: ['library-1-xcts.onrender.com'], 
   },
 })
